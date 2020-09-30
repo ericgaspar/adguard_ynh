@@ -14,12 +14,11 @@
         "email": "liberodark@gmail.com"
     },
     "requirements": {
-        "yunohost": ">= 2.7.2"
+        "yunohost": ">= 3.8.1"
     },
     "multi_instance": false,
     "services": [
         "nginx",
-        "php5-fpm",
         "mysql"
     ],
     "arguments": {
@@ -46,7 +45,7 @@
                 "name": "is_public",
                 "type": "boolean",
                 "ask": {
-                    "en": "Is it a public site ?",
+                    "en": "Is it a public site?",
                     "fr": "Est-ce un site public ?"
                 },
                 "default": "true"
@@ -55,7 +54,7 @@
                 "name": "ad_user",
                 "type": "ad_user",
                 "ask": {
-                    "en": "Enter your admin username ?",
+                    "en": "Enter your admin username?",
                     "fr": "Entrez votre nom d'utilisateur ?"
                 },
                 "example": "liberodark"
@@ -64,7 +63,7 @@
                 "name": "ad_password",
                 "type": "ad_password",
                 "ask": {
-                    "en": "Enter your password !",
+                    "en": "Enter your password!",
                     "fr": "Entrez votre mot de passe !"
                 },
                 "example": "mypassword"
